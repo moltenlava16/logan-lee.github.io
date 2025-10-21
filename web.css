@@ -1,0 +1,146 @@
+/* Basic Reset and Font Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #041E42; /* Georgetown Blue for main text */
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    /* Hide scrollbar if content fits */
+    overflow-y: auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Headers */
+h1, h2, h3 {
+    font-family: Garamond, 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #041E42; /* Georgetown Blue */
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #63666A; /* Georgetown Gray */
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #041E42;
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #003DA5; /* Secondary blue for subsection headers */
+    font-size: 1.3em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    color: #003DA5; /* Secondary blue */
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+a:hover {
+    border-bottom: 1px solid #003DA5;
+}
+
+/* Lists */
+ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 5px;
+    color: #63666A; /* Georgetown Gray for list items */
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 10px;
+    color: #63666A;
+}
+
+/* Horizontal Rules */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #D6D2C4; /* Light secondary color */
+    margin: 30px 0;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 20px;
+}
+
+/* Project Links */
+section h3 + p {
+    margin-bottom: 5px;
+}
+
+section h3 + p + p {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 2px solid #D6D2C4;
+    text-align: center;
+    color: #63666A;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 20px 15px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 1.2em;
+    }
+}
